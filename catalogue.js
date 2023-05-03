@@ -25,7 +25,7 @@ window.onload = function () {
     recetteOrigine.className = 'recette-origine';
 
     const recetteNote = document.createElement('p');
-    recetteNote.textContent = "Note globale: " + recette.comments.rating;
+    recetteNote.textContent = "Note globale: " + recette.global;
     recetteNote.className = 'recette-note';
 
     const recetteButton = document.createElement('button');
