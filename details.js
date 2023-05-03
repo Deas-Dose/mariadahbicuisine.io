@@ -27,15 +27,15 @@ window.onload = function () {
   recetteOrigine.className = 'recette-origine';
 
   const recetteNote = document.createElement('p');
-  recetteNote.textContent = "Note globale: " + recette.comments.rating;
+  recetteNote.textContent = "Note globale: " + recette.global;
   recetteNote.className = 'recette-note';
 
   const recetteIngredients = document.createElement('p');
-  recetteIngredients.textContent = "Ingrédients: " + recette.ingredients.join(", ");
+  recetteIngredients.textContent =  recette.ingredients.join(", ");
   recetteIngredients.className = 'recette-ingredients';
 
   const recetteInstructions = document.createElement('p');
-  recetteInstructions.textContent = "Instructions: " + recette.instructions;
+  recetteInstructions.textContent =  recette.instructions;
   recetteInstructions.className = 'recette-instructions';
 
   recetteContainer.appendChild(recetteImage);
