@@ -58,7 +58,7 @@ nav img {
   justify-content: center;
   align-items: center;
   gap: 0;
-  margin: auto;
+  margin: auto auto auto auto;
   width: 70%;
 }
 

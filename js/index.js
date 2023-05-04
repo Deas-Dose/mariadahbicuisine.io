@@ -11,18 +11,18 @@ while (recettesAleatoires.length < 3) {
 }
 
 // Affichage des recettes dans le HTML
-// recettesAleatoires.forEach(recette => {
-//   const recetteHTML = `
-//     <div class="recette">
-//       <img src="${recette.image}" alt="Image de la recette">
-//       <h2>${recette.name}</h2>
-//       <p>${recette.category}</p>
-//       <p>${recette.duration}</p>
-//       <p>${recette.country}</p>
-//     </div>
-//   `;
-//   recettesContainer.append(recetteHTML);
-// });
+recettesAleatoires.forEach(recette => {
+  const recetteHTML = `
+    <div class="recette">
+      <img src="${recette.image}" alt="Image de la recette">
+      <h2>${recette.name}</h2>
+      <p>${recette.category}</p>
+      <p>${recette.duration}</p>
+      <p>${recette.country}</p>
+    </div>
+  `;
+  recettesContainer.innerHTML += (recetteHTML);
+});
 
 
 
